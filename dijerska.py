@@ -1,8 +1,15 @@
 from collections import deque
+<<<<<<< Updated upstream
 
 def dijkstraAlgo(graph, vertex):
     queue = deque([vertex])
     distance = {vertex: 0}
+=======
+#without duplication
+def dijkstra(graph, start):
+    queue = deque([start])
+    dist = {start: 0}
+>>>>>>> Stashed changes
     while queue:
         t = queue.popleft()
         print("Visite du sommet " + str(t))
